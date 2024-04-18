@@ -32,9 +32,9 @@ function myReduce(collection, callback, acc) {
       newCollection = newCollection.slice(1);
     }
   
-    const len = newCollection.length;
+    const newLength = newCollection.length;
   
-    for (let i = 0; i < len; i++) {
+    for (let i = 0; i < newLength; i++) {
       acc = callback(acc, newCollection[i], newCollection);
     }
     return acc;
